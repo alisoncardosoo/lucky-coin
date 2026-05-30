@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucky Coin</title>
+    <meta name="theme-color" content="#8ea9c1" />
+    <link rel="icon" type="image/png" href="./assets/cara.png" />
+    <link rel="apple-touch-icon" href="./assets/icons/icon-192.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app" aria-live="polite">
+      <section class="glass-card">
+        <section class="hero-copy">
+          <h1 class="title">Gire a Moeda</h1>
+          <p class="subtitle">Clique na moeda para girar</p>
+        </section>
+
+        <section class="coin-stage" aria-label="Area principal da moeda">
+          <p id="coin-outcome" class="coin-outcome" aria-live="polite">Jogue para descobrir</p>
+          <div class="coin-shell">
+            <span class="coin-glow" aria-hidden="true"></span>
+            <button id="coin-button" class="coin-button" type="button" aria-label="Girar moeda">
+              <span id="coin" class="coin" role="img" aria-label="Moeda com os lados cara e coroa">
+                <span class="coin-face coin-face--front">
+                  <img src="./assets/cara.png" alt="Face cara" />
+                </span>
+                <span class="coin-face coin-face--back">
+                  <img src="./assets/coroa.png" alt="Face coroa" />
+                </span>
+              </span>
+            </button>
+          </div>
+        </section>
+
+        <footer class="status">
+          <p id="result" class="result">Pronto para jogar</p>
+          <button id="spin-button" class="spin-button" type="button" aria-label="Girar moeda">
+            Girar moeda
+          </button>
+        </footer>
+      </section>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

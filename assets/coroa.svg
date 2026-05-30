@@ -1,0 +1,17 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Moeda coroa">
+  <defs>
+    <radialGradient id="crownGold" cx="35%" cy="28%" r="70%">
+      <stop offset="0%" stop-color="#fff3bb" />
+      <stop offset="52%" stop-color="#f7cd4a" />
+      <stop offset="100%" stop-color="#c4921f" />
+    </radialGradient>
+  </defs>
+  <circle cx="256" cy="256" r="245" fill="url(#crownGold)" stroke="#875b00" stroke-width="12" />
+  <circle cx="256" cy="256" r="210" fill="none" stroke="#986a08" stroke-width="10" stroke-dasharray="8 10" />
+  <text x="256" y="220" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="52" font-weight="700" fill="#5d3e00">COROA</text>
+  <path d="M155 320h202l-10-92-44 34-47-72-44 72-47-34z" fill="#694600" opacity="0.14" />
+  <path d="M160 312h192l-9-80-39 30-48-70-48 70-39-30z" fill="#704900" />
+  <circle cx="212" cy="238" r="12" fill="#fbbf24" />
+  <circle cx="256" cy="205" r="13" fill="#fde047" />
+  <circle cx="300" cy="238" r="12" fill="#f59e0b" />
+</svg>

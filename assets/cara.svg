@@ -1,0 +1,13 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Moeda cara">
+  <defs>
+    <radialGradient id="faceGold" cx="35%" cy="28%" r="70%">
+      <stop offset="0%" stop-color="#fff4bf" />
+      <stop offset="52%" stop-color="#f8d55b" />
+      <stop offset="100%" stop-color="#d2a72f" />
+    </radialGradient>
+  </defs>
+  <circle cx="256" cy="256" r="245" fill="url(#faceGold)" stroke="#9a6d09" stroke-width="12" />
+  <circle cx="256" cy="256" r="210" fill="none" stroke="#aa7e16" stroke-width="10" stroke-dasharray="8 10" />
+  <text x="256" y="220" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="52" font-weight="700" fill="#6b4a00">CARA</text>
+  <text x="256" y="300" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="96" font-weight="700" fill="#6b4a00">R$</text>
+</svg>
