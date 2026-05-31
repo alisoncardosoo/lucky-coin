@@ -4,45 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lucky Coin</title>
-    <meta name="theme-color" content="#8ea9c1" />
+    <meta name="theme-color" content="#f2f2f2" />
     <link rel="icon" type="image/png" href="./assets/cara.png" />
     <link rel="apple-touch-icon" href="./assets/icons/icon-192.png" />
     <link rel="manifest" href="./manifest.webmanifest" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <main class="app" aria-live="polite">
-      <section class="glass-card">
-        <section class="hero-copy">
-          <h1 class="title">Gire a Moeda</h1>
-          <p class="subtitle">Clique na moeda para girar</p>
+    <div class="app-shell">
+      <main class="poster app" aria-live="polite">
+        <section class="hero-grid">
+          <h1 class="display-title">Gire a<br />Moeda</h1>
+          <aside class="tag-box">
+            Decida.<br />Confie.<br />Gire.
+            <span class="tag-line"></span>
+          </aside>
+        </section>
+
+        <div class="hero-divider" aria-hidden="true">
+          <span class="divider-plus">+</span>
+          <span class="divider-line"></span>
+        </div>
+
+        <section class="instruction-grid">
+          <div class="instruction-copy">
+            <p class="instruction-title">Clique na moeda<br />para girar</p>
+            <span class="instruction-mark"></span>
+            <p id="coin-outcome" class="coin-outcome">Jogue para descobrir</p>
+          </div>
+          <span class="decor-cross" aria-hidden="true"></span>
         </section>
 
         <section class="coin-stage" aria-label="Area principal da moeda">
-          <p id="coin-outcome" class="coin-outcome" aria-live="polite">Jogue para descobrir</p>
-          <div class="coin-shell">
-            <span class="coin-glow" aria-hidden="true"></span>
-            <button id="coin-button" class="coin-button" type="button" aria-label="Girar moeda">
-              <span id="coin" class="coin" role="img" aria-label="Moeda com os lados cara e coroa">
-                <span class="coin-face coin-face--front">
-                  <img src="./assets/cara.png" alt="Face cara" />
-                </span>
-                <span class="coin-face coin-face--back">
-                  <img src="./assets/coroa.png" alt="Face coroa" />
-                </span>
+          <button id="coin-button" class="coin-button" type="button" aria-label="Girar moeda">
+            <span id="coin" class="coin" role="img" aria-label="Moeda com os lados cara e coroa">
+              <span class="coin-face coin-face--front">
+                <img src="./assets/cara.png" alt="Face cara" />
               </span>
-            </button>
-          </div>
+              <span class="coin-face coin-face--back">
+                <img src="./assets/coroa.png" alt="Face coroa" />
+              </span>
+            </span>
+          </button>
         </section>
 
-        <footer class="status">
+        <section class="status-strip">
           <p id="result" class="result">Pronto para jogar</p>
-          <button id="spin-button" class="spin-button" type="button" aria-label="Girar moeda">
-            Girar moeda
-          </button>
+        </section>
+
+        <button id="spin-button" class="spin-button" type="button" aria-label="Girar moeda">
+          <span>Girar moeda</span>
+          <span class="spin-arrow" aria-hidden="true">&#8594;</span>
+        </button>
+
+        <footer class="poster-footer">
+          <p>Cara ou Coroa?<br />A escolha e sua.</p>
+          <div class="globe-box" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+              <circle cx="12" cy="12" r="9"></circle>
+              <ellipse cx="12" cy="12" rx="4.8" ry="9"></ellipse>
+              <path d="M3 12h18M5.5 7.5h13M5.5 16.5h13"></path>
+            </svg>
+          </div>
         </footer>
-      </section>
-    </main>
+      </main>
+    </div>
 
     <script type="module" src="./app.js"></script>
   </body>
